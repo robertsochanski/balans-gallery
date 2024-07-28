@@ -1,0 +1,113 @@
+html,
+body {
+    width: 100vw;
+    height: 4000vh;
+    font-family: "PP Neue Montreal";
+    background: #e6e1d6;
+}
+
+h2 {
+    font-family: "IvyMode";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #696255;
+    flex-shrink: 0;
+}
+
+.divider {
+    height: 0.5px;
+    width: 100%;
+    background-color: #696255;
+}
+.header-wrapper {
+    position: fixed;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    top: 5%;
+    left: 50%;
+    gap: 0.5rem;
+
+    transform: translateX(-50%);
+}
+.svg-wrapper {
+    width: 10vw;
+
+    position: fixed;
+    top: 85%;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.logo-balans {
+    position: absolute;
+    width: 100%;
+}
+.intro-slider_slider-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 3000%;
+    height: 100svh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+    border-radius: 0.5rem;
+    box-shadow: 0px 16px 32px -8px rgba(12, 11, 8, 0.15), 0px 24px 48px 0px rgba(12, 11, 8, 0.1);
+}
+
+.card {
+    width: 600px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column-reverse;
+    transition: transform 0.3s ease-out;
+    border-radius: 1rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        height: 4000vh;
+    }
+
+    .intro-slider_slider-wrapper {
+        width: 6400%;
+        gap: 0px;
+    }
+
+    .card {
+        width: 70vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column-reverse;
+        transition: transform 0.3s ease-out;
+    }
+
+    .svg-wrapper {
+        width: 40vw;
+
+        position: fixed;
+        bottom: 15%;
+        left: 50%;
+        background-color: red;
+        transform: translateX(-50%);
+    }
+
+    .logo-balans {
+        position: absolute;
+        width: 100%;
+    }
+}
